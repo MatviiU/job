@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_task/screens/main_screen.dart';
+import 'package:test_task/screens/refactorCode.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: MainScreen(),
+      home: RefactorCode(),
       debugShowCheckedModeBanner: false,
     );
   }

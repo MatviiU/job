@@ -15,9 +15,8 @@ class _MainScreenState extends State<MainScreen> {
   Color backgroundColor = Colors.white;
   Color textColor = Colors.black;
 
-  ColorType getColorType(Color color, {double midBrightness = 0.5}) {
-    final brightness = color.computeLuminance();
-    return brightness > midBrightness ? ColorType.light : ColorType.dark;
+  ColorType getColorType(Color color) {
+    return color.computeLuminance() > 0.5 ? ColorType.light : ColorType.dark;
   }
 
   @override
